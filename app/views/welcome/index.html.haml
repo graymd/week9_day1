@@ -1,0 +1,41 @@
+.text-center
+  %h1
+    Calculator
+  %div{ 'ng-controller': 'indexCtrl' }
+    %row
+      .col-md-1.col-md-offset-5    
+        %input{type: "text", placeholder: 0, 'ng-model': 'calcInput'}
+        %button{ 'ng-click': 'clearCalculation()'}
+          clear
+    %row
+      .col-md-3.col-md-offset-5
+        %button{ 'ng-click': 'userNumber1()'}
+          1
+        %button{ 'ng-click': 'userNumber2()'}
+          2
+        %button{ 'ng-click': 'userNumber3()'}
+          3
+        %button{ 'ng-click': 'userNumberPlus()'}
+          +
+    %row
+      .col-md-3.col-md-offset-5
+        %button{ 'ng-click': 'userNumber4()'}
+          4
+        %button{ 'ng-click': 'userNumber5()'}
+          5
+        %button{ 'ng-click': 'userNumber6()'}
+          6
+        %button{ 'ng-click': 'userNumberMinus()'} -
+    %row
+      .col-md-3.col-md-offset-5
+        %button{ 'ng-click': 'userNumber7()'}
+          7
+        %button{ 'ng-click': 'userNumber8()'}
+          8
+        %button{ 'ng-click': 'userNumber9()'}
+          9
+        %button{ 'ng-click': 'userNumberEquals()'} =
+    %row
+      .col-md-1.col-md-offset-5.text-center
+        %button{ 'ng-click': 'userNumber0()'}
+          0
